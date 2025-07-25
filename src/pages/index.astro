@@ -1,11 +1,19 @@
 ---
-import Welcome from '../components/Welcome.astro';
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import ProjectGrid from '../components/ProjectGrid.astro';
 ---
 
-<Layout>
-	<Welcome />
+<Layout title="Sean McDonald – Portfolio">
+  <section class="text-center py-20">
+    <h1 class="text-4xl font-bold">Sean McDonald</h1>
+    <p class="mt-4 text-gray-700">
+      Full-stack dev (Rails, Django, React, Vue). Learning by building. Passion for data, games,
+      and cleaner tools.
+    </p>
+  </section>
+
+  <section id="projects" class="px-4 pb-20">
+    <h2 class="text-2xl font-bold mb-6 text-center">Projects</h2>
+    <ProjectGrid />
+  </section>
 </Layout>
