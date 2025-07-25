@@ -1,13 +1,3 @@
----
-const screenshots = [
-  "/images/rcs-homepage.png",
-  "/images/rcs-signup.png",
-  "/images/rcs-accountpage.png",
-  "/images/rcs-gamepage.png",
-  "/images/rcs-reviewpage.png"
-];
----
-
 <div class="grid gap-8 md:grid-cols-2">
   <!-- RCS -->
   <div class="bg-white rounded-lg shadow-md p-6 text-left">
@@ -47,14 +37,67 @@ const screenshots = [
 </div>
 
 <!-- RCS Modal -->
-<dialog id="rcs-modal" class="backdrop:bg-black/50 rounded-lg max-w-4xl w-full p-6">
+<dialog
+  id="rcs-modal"
+  class="backdrop:bg-black/50 rounded-lg max-w-4xl w-full p-4 overflow-hidden"
+  style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);"
+>
   <form method="dialog">
     <button class="absolute top-2 right-4 text-2xl text-gray-500 hover:text-black">&times;</button>
   </form>
-  <h3 class="text-xl font-semibold mb-4">Radiology Call Simulator – Screenshots</h3>
-  <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-    {screenshots.map((src) => (
-      <img src={src} alt="RCS screenshot" class="rounded shadow border" />
-    ))}
+  <h3 class="text-xl font-semibold mb-4 text-center">Radiology Call Simulator – Screenshots</h3>
+
+  <div class="relative flex items-center justify-center">
+    <button
+      class="absolute left-0 text-3xl text-gray-500 hover:text-black px-3 z-10"
+      onclick="prevImage()"
+      aria-label="Previous"
+    >
+      &#10094;
+    </button>
+
+    <img
+      id="carousel-image"
+      src="/images/rcs-homepage.png"
+      alt="RCS screenshot"
+      class="rounded shadow border object-contain w-full max-h-[500px]"
+    />
+
+    <button
+      class="absolute right-0 text-3xl text-gray-500 hover:text-black px-3 z-10"
+      onclick="nextImage()"
+      aria-label="Next"
+    >
+      &#10095;
+    </button>
   </div>
+
+  <script type="text/javascript" is:inline>
+    const screenshots = [
+        "/images/rcs-homepage.png",
+        "/images/rcs-signup.png",
+        "/images/rcs-accountpage.png",
+        "/images/rcs-gamepage.png",
+        "/images/rcs-reviewpage.png"
+    ];
+    let index = 0;
+    const img = document.getElementById("carousel-image");
+
+    function showImage(i) {
+        index = (i + screenshots.length) % screenshots.length;
+        img.src = screenshots[index];
+    }
+
+    function prevImage() {
+        showImage(index - 1);
+    }
+
+    function nextImage() {
+        showImage(index + 1);
+    }
+
+    // expose globally so the buttons can use them
+    window.prevImage = prevImage;
+    window.nextImage = nextImage;
+  </script>
 </dialog>
