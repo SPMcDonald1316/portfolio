@@ -1,46 +1,44 @@
-# Astro Starter Kit: Basics
+# Sean McDonald – Developer Portfolio
 
-```sh
-npm create astro@latest -- --template basics
-```
+This is my personal portfolio site, built to showcase selected software projects and provide a way to get in touch.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## 🚀 Tech Stack
 
-## 🚀 Project Structure
+- **Framework:** [Astro](https://astro.build/)
+- **Styling:** Tailwind CSS
+- **Icons:** Font Awesome
+- **Hosting:** (Planned) Vercel
 
-Inside of your Astro project, you'll see the following folders and files:
+## 📂 Project Highlights
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
-```
+### ⚕ Radiology Call Simulator
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+A full-stack training simulator for radiology residents featuring:
 
-## 🧞 Commands
+- Case management
+- Session tracking
+- Audio transcription via WebSpeech API
+- DICOM viewer integration  
+  🔒 Code and live demo are private per client request.
 
-All commands are run from the root of the project, from a terminal:
+### ⚾ Baseball Almanac (Legacy)
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+Historical baseball database built with Rails + Vue.
 
-## 👀 Want to learn more?
+- Parsed CSVs and scraped stats
+- Searchable tables and basic visualizations  
+  🗓 Originally built in 2020 – not currently deployed  
+  [View GitHub Repo »](https://github.com/SPMcDonald1316/capstone_project)
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+### ⚾ Baseball Almanac v2 (WIP)
+
+Complete rebuild of the legacy app with improved structure, visualizations, and UX.  
+💡 Planned tech: Rails + Vue + D3.js
+
+## 📬 Contact
+
+You can reach me via [email](mailto:spmcdonald1316@gmail.com), or find me on [GitHub](https://github.com/SPMcDonald1316) and [LinkedIn](https://www.linkedin.com/in/spmcdonald1316/).
+
+## 📝 Status
+
+This portfolio is a work in progress and will continue evolving as I refine and add projects.
