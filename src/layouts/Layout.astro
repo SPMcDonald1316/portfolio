@@ -8,6 +8,24 @@ const { title = "Portfolio" } = Astro.props;
     <meta charset="UTF-8" />
     <title>{title}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Primary Meta Tags -->
+    <title>Sean McDonald – Portfolio</title>
+    <meta name="title" content="Sean McDonald – Portfolio" />
+    <meta name="description" content="Full-stack dev (Rails, Django, React, Vue). Learning by building." />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://yourdomain.com/" /> <!-- replace before deploy -->
+    <meta property="og:title" content="Sean McDonald – Portfolio" />
+    <meta property="og:description" content="Full-stack dev (Rails, Django, React, Vue). Learning by building." />
+    <meta property="og:image" content="/og-image.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content="Sean McDonald – Portfolio" />
+    <meta property="twitter:description" content="Full-stack dev (Rails, Django, React, Vue). Learning by building." />
+    <meta property="twitter:image" content="/og-image.png" />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
   </head>
   <body class="bg-gray-100 text-gray-900 font-sans">
     <main class="max-w-3xl mx-auto px-4 py-12">
