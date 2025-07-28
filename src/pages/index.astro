@@ -5,7 +5,7 @@ import ProjectGrid from '../components/ProjectGrid.astro';
 
 <Layout title="Sean McDonald – Portfolio">
   <!-- Top block stays focused on skills -->
-  <section class="text-center py-20">
+  <section class="text-center bg-slate-50 py-20 my-5">
     <h1 class="text-4xl font-bold">Sean McDonald</h1>
     <p class="mt-4 text-gray-700">
       Full-stack dev (Rails, Django, React, Vue). Learning by building.
@@ -27,16 +27,21 @@ import ProjectGrid from '../components/ProjectGrid.astro';
   </section>
 
   <!-- Footer / Contact section -->
-  <footer class="bg-gray-100 py-10 px-4 text-center">
+  <footer class="bg-slate-200 py-10 px-4 text-center mt-8">
     <h2 class="text-xl font-semibold mb-2">Get in Touch</h2>
     <p class="text-gray-700 mb-4">
-      <a href="mailto:youremail@example.com" class="text-blue-600 underline">Email me</a> or find me here:
+      <a
+        href="mailto:spmcdonald1316@gmail.com"
+        class="text-blue-600 underline hover:opacity-80 active:scale-95 transition"
+      >
+        Email me
+      </a> or find me here:
     </p>
     <div class="flex justify-center gap-6 mb-4 text-gray-600 text-2xl">
-      <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+      <a href="https://github.com/SPMcDonald1316" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="p-2 rounded-lg hover:bg-slate-300 transition-colors active:scale-95">
         <i class="fab fa-github"></i>
       </a>
-      <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+      <a href="https://linkedin.com/in/spmcdonald1316" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="p-2 rounded-lg hover:bg-slate-300 transition-colors active:scale-95">
         <i class="fab fa-linkedin"></i>
       </a>
     </div>
